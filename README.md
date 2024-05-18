@@ -1,5 +1,5 @@
 # Cat++
-It's just like the `cat` command on Linux, but it's output is prettier.
+It's just like the `cat` command on Linux, but its output is prettier.
 
 ## Installing
 Type command:
