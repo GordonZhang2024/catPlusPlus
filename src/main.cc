@@ -10,13 +10,16 @@ using std::ifstream;
 
 int main(int argc, char *argv[])
 {
-	ifstream fin(argv[1]);
-	string s;
-	int line = 1;
-	while(getline(fin, s)) {
-		printf("\x1b[36m%5d | \x1b[0m", line);
-		cout << s << endl;
-		++line;
+	for (int i = 1; i < argc; ++i) {
+		ifstream fin(argv[i]);
+		string s;
+		int line = 1;
+		while(getline(fin, s)) {
+			printf("\x1b[36m%5d | \x1b[0m", line);
+			cout << s << endl;
+			++line;
+		}
+		cout << endl;
 	}
 	return 0;
 }
