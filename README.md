@@ -9,7 +9,7 @@ $ cd build/
 $ cmake ..
 $ make
 $ cd ../
-$ sudo ./install.sh
+$ ./install.sh
 ```
 
 ## Usage
