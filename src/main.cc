@@ -32,7 +32,9 @@ using std::ifstream;
 int main(int argc, char *argv[])
 {
 	for (int i = 1; i < argc; ++i) {
-        cout << "\x1b[1;34m" << argv[i] << "\x1b[0m" << endl;
+        if (argc > 2)
+            // Print the filename if there are more than 1 file to read.
+            cout << "\x1b[1;34m" << argv[i] << "\x1b[0m" << endl;
         ifstream fin(argv[i]);
 		string s;
 		int line = 1;
